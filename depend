@@ -1,0 +1,17 @@
+deck.o: deck.c deck.h card.h car.h specification.h wheel.h engine.h \
+ performance.h cardlist.h
+wheel.o: wheel.c wheel.h
+performance.o: performance.c performance.h
+specification.o: specification.c specification.h wheel.h engine.h
+toptrumps.o: toptrumps.c match.h cardlist.h card.h car.h specification.h \
+ wheel.h engine.h performance.h deck.h hand.h
+card.o: card.c card.h car.h specification.h wheel.h engine.h \
+ performance.h
+cardlist.o: cardlist.c card.h car.h specification.h wheel.h engine.h \
+ performance.h cardlist.h
+match.o: match.c match.h cardlist.h card.h car.h specification.h wheel.h \
+ engine.h performance.h deck.h hand.h
+car.o: car.c car.h specification.h wheel.h engine.h performance.h
+engine.o: engine.c engine.h
+hand.o: hand.c hand.h card.h car.h specification.h wheel.h engine.h \
+ performance.h cardlist.h
