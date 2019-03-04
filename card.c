@@ -7,13 +7,16 @@
 //===============================================
 Card * cardCreate(Car c)
 {
-  c= malloc(car * sizeof * Car)
+  Card *card= malloc(sizeof(Car));
+  card->car=c;
+  card->next=NULL;
+  card->prev=NULL;
 }
 
 //===============================================
 void cardDestroy(Card *c)
 {
- // TODO
+ free(c);
 }
 
 //===============================================
